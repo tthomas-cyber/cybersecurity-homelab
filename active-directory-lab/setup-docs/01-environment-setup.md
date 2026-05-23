@@ -9,13 +9,15 @@ penetration testing techniques safely without impacting real networks.
 
 ## Architecture Plan
 VirtualBox Host-Only Network (192.168.56.0/24)
+
 ├── Windows Server 2019 DC (192.168.56.10) ← Domain Controller
+
 └── Kali Linux WSL2 (172.28.206.26)        ← Attack Machine
 
 ## Software Required
-- VirtualBox (already installed)
-- Windows Server 2019 Evaluation ISO (free 180-day license)
-- Kali Linux WSL2 (already installed)
+- VirtualBox
+- Windows Server 2019 Evaluation ISO
+- Kali Linux WSL2
 
 ## Why This Matters
 Active Directory is present in approximately 90% of enterprise environments.
