@@ -40,18 +40,25 @@ jsmith is a direct member of Domain Admins. Any compromise of jsmith's credentia
 ## Attack Chain Summary
 Initial Access
 ↓
+
 AS-REP Roast bbrown (no credentials needed)
 ↓
+
 Crack bbrown hash → qwerty456
 ↓
+
 Kerberoast with bbrown credentials
 ↓
+
 Crack svc_web hash → Password1!
 ↓
+
 BloodHound enumeration reveals jsmith = Domain Admin
 ↓
+
 Crack jsmith hash → Password123!
 ↓
+
 DOMAIN ADMIN
 
 ## Why BloodHound Matters In Real Engagements
