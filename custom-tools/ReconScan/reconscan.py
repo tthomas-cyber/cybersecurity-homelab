@@ -139,11 +139,13 @@ def discover_hosts(network):
 
     return live_hosts
 
-def grab_banner(ip, port, timeout=2):
+def grab_banner(ip, port, timeout=3):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(timeout)
         sock.connect((ip, port))
+        import time
+        time.sleep(0.5)
 
         if port in [80, 8080, 8443, 443]:
             sock.send(b"GET / HTTP/1.0\r\nHost: " + ip.encode() + b"\r\n\r\n")
@@ -212,7 +214,7 @@ def scan_host(ip, port_range):
             except Exception:
                 break
 
-    for _ in range(100):
+    for _ in range(50):
         t = threading.Thread(target=worker)
         t.daemon = True
         t.start()
