@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://claude.ai/chat/2a247284-1a49-4ab1-9428-d45e60676406
+HostUrl=https://claude.ai/api/organizations/dc156568-1c11-480f-920b-83aa795f557a/conversations/2a247284-1a49-4ab1-9428-d45e60676406/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Fsmbenum.py
