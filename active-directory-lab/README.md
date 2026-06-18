@@ -12,11 +12,11 @@ modern penetration testing techniques used in professional engagements.
 - **Network:** Host-only isolated network
 
 ## Techniques Practiced
-- [ ] Domain enumeration with BloodHound
-- [ ] Kerberoasting (CVE targeting service accounts)
-- [ ] AS-REP Roasting
-- [ ] Pass-the-Hash lateral movement
-- [ ] DCSync credential dumping
+- Domain enumeration with BloodHound
+- Kerberoasting (CVE targeting service accounts)
+- AS-REP Roasting
+- Pass-the-Hash lateral movement
+- DCSync credential dumping
 
 ## Tools Used
 - BloodHound / SharpHound
